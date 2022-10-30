@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Res";
+    src: url("./Fonts/Telex-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #000; */
+    color: #000;
+    font-family: "Res";
+    text-align: center;
+}
+h1, h2, h3, h4,h5, h6, span{
+    color: #fff;
+}
+body{
+    background: black;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px auto;
+}
+.title{
+    padding-top: 4rem;
+    text-align: center;
+}
+.forma{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+}
+form input{
+    width: 35%;
+    padding: 0.7rem 1.5rem;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    border: 1px solid transparent;
+    outline: 3px solid transparent;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    font-size: 17px;
+}
+form input::placeholder{
+    color: #000;
+}
+.nav input{
+    border: 1px solid transparent;
+    outline: 3px solid transparent;
+    transition: 0.5s ease;
+}
+form input:focus, .nav input:focus, .nav button:hover, .card-btn button:hover, .locals-korzina-btn:hover, .locals-shops button:hover, .ends_input:focus, .ends_btn:hover {
+    outline: 3px solid rgba(0, 255, 255, 0.512);
+}
+form button{
+    width: 35%;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    font-size: 17px;
+}
+header{
+    width: 100%;
+    padding: 1rem;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+input{
+    background: #fff;
+}
+.nav input{
+    padding: 0.4rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 0.5rem;
+    color: #000;
+}   
+.nav button, .card-btn button, .locals-korzina-btn, .locals-shops button, .ends_input, .ends_btn{
+    outline: 3px solid transparent;
+    background: #fff;
+    padding: 0.4rem 1rem;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+.cards{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cards .card{
+    width: 30%;
+    text-align: center;
+    margin: 1rem;
+}
+.card .card-text h4, h5{
+    padding: 0.4rem;
+}
+.card .card-img-top{
+    width: 90%;
+    margin: 0 auto;
+}
+.card-btn{
+    padding-top: 1rem;
+}
+.karzina-align{
+    opacity: 0;
+    transform: translateX(-110%);
+    margin: 0.4rem;
+    width: 30%;
+    position: absolute;
+    background: #fff;
+    color: #000;
+    transition: 0.5s ease;
+}
+.karzina-align li{
+    padding: 0.5rem;
+}
+.karzina-align .locals-shop-element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.karzina-align .locals-shop-element h2{
+    color: #000;
+}
+.locals-shops{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.locals-shop-element button{
+    background: crimson;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid rgba(128, 128, 128, 0.499);
+    transition: 0.5s ease;
+}
+.locals-shop-element button:hover{
+    background: #fff;
+    color: #000;
+}
+.block{
+    opacity: 1;
+    transform: translateX(10%);
+}
+.locals-korzina-btn{
+    position: absolute;
+}
+.fix{
+    position: fixed;
+}
+.karzina-align{
+    margin-top: 3rem;
+}
+.shops{
+    text-align: center;
+    padding-top: 2rem;
+}
+.shops form{
+    padding-top: 7rem;
+}
+.shops h2, .ends-title-h2{
+    padding-top: 3rem;
+    letter-spacing: 4px;
+    color: crimson;
+    display: none;
+    transition: 0.5s ease;
+}
+.blocks{
+    display: bloc;
+}
+.ends-align{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    align-items: center;
+}
+.ends_input{
+    padding: 0.5rem 1.4rem;
+    margin: 0.4rem;
+}
+.ends-title{
+    padding: 0.5rem;
+}
